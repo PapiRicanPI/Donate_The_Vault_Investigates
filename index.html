@@ -67,7 +67,6 @@
   .dollar-amount{font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;color:var(--gold);display:block}
   .dollar-period{font-family:'Courier Prime',monospace;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin:0.5rem 0 0.8rem;display:block}
   .dollar-desc{font-size:0.95rem;color:#7a7060;line-height:1.6}
-  /* DONATE GRID */
   .donate-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge);margin-top:2.5rem}
   .donate-card{background:var(--void);padding:2.5rem 2rem;display:flex;flex-direction:column;transition:background 0.2s}
   .donate-card:hover{background:#0c0c0c}
@@ -83,7 +82,6 @@
   .card-btn:hover{border-color:var(--gold);color:var(--gold)}
   .donate-card.featured .card-btn{background:var(--gold);color:var(--void);border-color:var(--gold)}
   .donate-card.featured .card-btn:hover{background:var(--gold-light)}
-  /* PORTALS */
   .portal-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--edge);border:1px solid var(--edge);margin-top:2.5rem}
   @media(max-width:600px){.portal-grid{grid-template-columns:1fr}}
   .portal-card{background:var(--void);padding:3rem 2.5rem;position:relative;overflow:hidden}
@@ -94,10 +92,6 @@
   .portal-desc{font-size:1rem;color:var(--muted);line-height:1.7;margin-bottom:2rem}
   .portal-btn{font-family:'Courier Prime',monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid var(--gold-dim);padding:0.7rem 1.5rem;display:inline-block;transition:all 0.2s}
   .portal-btn:hover{background:var(--gold);color:var(--void);border-color:var(--gold)}
-  /* GOFUNDME WIDGET */
-  .gfm-wrap{margin-top:2.5rem;border:1px solid var(--edge);padding:2rem;background:var(--deep)}
-  .gfm-label{font-family:'Courier Prime',monospace;font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:block}
-  /* FINAL CTA */
   .final-cta{position:relative;overflow:hidden;padding:8rem 2rem;text-align:center;background:var(--deep)}
   .ring{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(200,151,58,0.07);pointer-events:none;animation:pulse-ring 6s ease-in-out infinite}
   .ring:nth-child(1){width:300px;height:300px}
@@ -125,13 +119,12 @@
   <a href="https://thevaultinvestigates.cloud/" class="nav-logo">The <span>Vault</span> Investigates</a>
   <div class="nav-right">
     <a href="https://thevaultinvestigates.cloud/" class="nav-link">Archive</a>
-    <a href="https://truthdrop-5buxndbh.manus.space/tips" class="nav-link">Submit Tip</a>
-    <a href="https://vet.thevault.watch/" class="nav-link">Apply for Access</a>
-    <a href="https://ko-fi.com/thevaultinvestigates/tiers" class="nav-cta">Support →</a>
+    <a href="mailto:tips@thevaultinvestigates.cloud" class="nav-link">Submit Tip</a>
+    <a href="https://vet.thevaultinvestigates.cloud/apply" class="nav-link">Apply for Access</a>
+    <a href="#support-options" class="nav-cta">Support →</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <div class="vault-bg">
     <div class="vault-circle"></div>
@@ -144,13 +137,12 @@
     <div class="gold-rule"></div>
     <p class="hero-sub">Documenting how governments, NGOs, and contractors turn human suffering into a business model — Puerto Rico and the United States.</p>
     <div class="hero-cta">
-      <a href="https://ko-fi.com/thevaultinvestigates/tiers" class="btn btn-gold">Keep the archive alive</a>
-      <a href="https://truthdrop-5buxndbh.manus.space/tips" class="btn btn-outline">Submit a tip</a>
+      <a href="#support-options" class="btn btn-gold">Keep the archive alive</a>
+      <a href="mailto:tips@thevaultinvestigates.cloud" class="btn btn-outline">Submit a tip</a>
     </div>
   </div>
 </div>
 
-<!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker-track">
     <span class="ticker-item">214 subscribers — 0 recurring donors</span>
@@ -166,7 +158,6 @@
   </div>
 </div>
 
-<!-- STORY -->
 <section class="section reveal">
   <p class="section-tag">The archivist's story</p>
   <div class="story-layout">
@@ -186,7 +177,6 @@
 
 <hr class="rule">
 
-<!-- FACTS -->
 <div class="dark-band">
   <section class="section reveal">
     <p class="section-tag">The reality right now</p>
@@ -213,7 +203,6 @@
 
 <hr class="rule">
 
-<!-- WHERE MONEY GOES -->
 <section class="section reveal">
   <p class="section-tag">Radical transparency</p>
   <h2>What your money <span class="gold">actually</span> does</h2>
@@ -243,9 +232,8 @@
 
 <hr class="rule">
 
-<!-- DONATE -->
 <div class="dark-band">
-  <section class="section reveal">
+  <section class="section reveal" id="support-options">
     <p class="section-tag">Every dollar counts</p>
     <h2>Choose how to <span class="gold">support</span></h2>
     <div class="donate-grid">
@@ -257,7 +245,7 @@
         </div>
         <span class="card-name">Archivist's Ally</span>
         <p class="card-desc">Ten people at this level covers a full month of core infrastructure. Be one of ten.</p>
-        <a href="https://ko-fi.com/thevaultinvestigates/tiers" class="card-btn">Give $10/month on Ko-fi →</a>
+        <a href="https://ko-fi.com/thevaultinvestigates" class="card-btn">Support $10/month on Ko-fi →</a>
       </div>
 
       <div class="donate-card">
@@ -267,44 +255,45 @@
         </div>
         <span class="card-name">The Witness</span>
         <p class="card-desc">You've read the archive. Three dollars says: keep going, don't stop.</p>
-        <a href="https://ko-fi.com/thevaultinvestigates/tiers" class="card-btn">Give $3/month on Ko-fi →</a>
+        <a href="https://ko-fi.com/thevaultinvestigates" class="card-btn">Support $3/month on Ko-fi →</a>
       </div>
 
       <div class="donate-card">
         <div class="card-top">
-          <span class="card-platform">Ko-fi · Monthly</span>
-          <span class="card-amount">$25</span><span class="card-freq">/month</span>
-        </div>
-        <span class="card-name">Vault Keeper</span>
-        <p class="card-desc">Directly funds a deep case file. Keeps a full investigation moving for weeks.</p>
-        <a href="https://ko-fi.com/thevaultinvestigates/tiers" class="card-btn">Give $25/month on Ko-fi →</a>
-      </div>
-
-      <div class="donate-card">
-        <div class="card-top">
-          <span class="card-platform">PayPal · Yearly One-Time</span>
+          <span class="card-platform">Stripe · Secure Checkout</span>
           <span class="card-amount">Any</span>
         </div>
-        <span class="card-name">PayPal Drop</span>
-        <p class="card-desc">Make a one-time yearly contribution via PayPal to keep the archive funded for the full year.</p>
-        <a href="https://www.paypal.com/ncp/payment/JH4X7243NJMRE" class="card-btn">Yearly Support via PayPal →</a>
+        <span class="card-name">Direct Support</span>
+        <p class="card-desc">Card payment via Stripe's secure checkout. Fast, direct, no third-party account needed.</p>
+        <a href="https://buy.stripe.com/8x26oG9mmgxbeYAeFKdQQ00" class="card-btn">Support via Stripe →</a>
+      </div>
+
+      <div class="donate-card">
+        <div class="card-top">
+          <span class="card-platform">Buy Me a Coffee · One-Time</span>
+          <span class="card-amount">Any</span>
+        </div>
+        <span class="card-name">Quick Support</span>
+        <p class="card-desc">A one-time gesture of support — no account required, takes under a minute.</p>
+        <a href="https://buymeacoffee.com/thevaultinvestigates" class="card-btn">Support on Buy Me a Coffee →</a>
+      </div>
+
+      <div class="donate-card">
+        <div class="card-top">
+          <span class="card-platform">GoFundMe · Campaign</span>
+          <span class="card-amount">Any</span>
+        </div>
+        <span class="card-name">Help Keep The Vault Alive</span>
+        <p class="card-desc">Support the full campaign — help a disabled veteran keep independent investigative journalism running.</p>
+        <a href="https://gofund.me/28b709bf9" class="card-btn">Support on GoFundMe →</a>
       </div>
 
     </div>
-
-    <!-- GOFUNDME WIDGET -->
-    <div class="gfm-wrap reveal">
-      <span class="gfm-label">◆ GoFundMe Campaign — Help a Disabled Vet Keep The Vault Alive</span>
-      <div class="gfm-embed" data-url="https://www.gofundme.com/f/help-a-disabled-vet-keep-the-vault-investigates-alive/widget/medium?sharesheet=undefined&attribution_id=sl:b63c8cbd-7455-46c2-b292-cc7d329874b9"></div>
-      <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
-    </div>
-
   </section>
 </div>
 
 <hr class="rule">
 
-<!-- PORTALS -->
 <section class="section reveal">
   <p class="section-tag">The infrastructure</p>
   <h2>Two portals. <span class="gold">One mission.</span></h2>
@@ -313,18 +302,17 @@
       <span class="portal-icon">🔒</span>
       <div class="portal-name">Truth<span>Drop</span>.io</div>
       <p class="portal-desc">The public tip portal. Submit documents, leads, and evidence securely and anonymously. All submissions encrypted. Reviewed within 48 hours. Your identity is never stored.</p>
-      <a href="https://truthdrop-5buxndbh.manus.space/tips" class="portal-btn">Submit a tip →</a>
+      <a href="mailto:tips@thevaultinvestigates.cloud" class="portal-btn">Submit a tip →</a>
     </div>
     <div class="portal-card">
       <span class="portal-icon">🗄️</span>
       <div class="portal-name">Vault <span>Access</span></div>
       <p class="portal-desc">Researchers, journalists, and investigators can apply for gated access to The Vault's full case file database. Vetted by The Vault Archivist. 3–5 day review.</p>
-      <a href="https://vet.thevault.watch/" class="portal-btn">Apply for access →</a>
+      <a href="https://vet.thevaultinvestigates.cloud/apply" class="portal-btn">Apply for access →</a>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
 <div class="final-cta">
   <div class="ring"></div><div class="ring"></div><div class="ring"></div>
   <div class="final-inner">
@@ -333,9 +321,9 @@
     <h2 class="final-h">Of 214 readers.<br>That's all it takes.</h2>
     <p class="final-p">If just 10 people gave $10 a month, the investigations continue. The archive survives. The money gets followed.</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-      <a href="https://ko-fi.com/thevaultinvestigates/tiers" class="btn btn-gold">Be one of ten →</a>
-      <a href="https://www.paypal.com/ncp/payment/JH4X7243NJMRE" class="btn btn-outline">PayPal →</a>
-      <a href="https://truthdrop-5buxndbh.manus.space/tips" class="btn btn-outline">Submit a tip →</a>
+      <a href="https://ko-fi.com/thevaultinvestigates" class="btn btn-gold">Be one of ten →</a>
+      <a href="https://buy.stripe.com/8x26oG9mmgxbeYAeFKdQQ00" class="btn btn-outline">Stripe →</a>
+      <a href="mailto:tips@thevaultinvestigates.cloud" class="btn btn-outline">Submit a tip →</a>
     </div>
   </div>
 </div>
@@ -344,13 +332,19 @@
   <div class="footer-logo">The <span>Vault</span> Investigates</div>
   <div class="footer-links">
     <a href="https://thevaultinvestigates.cloud/">Archive</a>
-    <a href="https://truthdrop-5buxndbh.manus.space">TruthDrop.io</a>
-    <a href="https://vet.thevault.watch/">Apply for Access</a>
-    <a href="https://ko-fi.com/thevaultinvestigates/tiers">Ko-fi</a>
-    <a href="https://www.paypal.com/ncp/payment/JH4X7243NJMRE">PayPal</a>
-    <a href="https://gofund.me/c2a9993c3">GoFundMe</a>
+    <a href="mailto:tips@thevaultinvestigates.cloud">Submit a Tip</a>
+    <a href="https://vet.thevaultinvestigates.cloud/apply">Apply for Access</a>
+    <a href="https://ko-fi.com/thevaultinvestigates">Ko-fi</a>
+    <a href="https://buymeacoffee.com/thevaultinvestigates">Buy Me a Coffee</a>
+    <a href="https://buy.stripe.com/8x26oG9mmgxbeYAeFKdQQ00">Stripe</a>
+    <a href="https://gofund.me/28b709bf9">GoFundMe</a>
   </div>
-  <div style="display:flex;gap:1.5rem;justify-content:center;margin-bottom:1rem;"><a href="https://www.facebook.com/vaultarchivist/" style="font-family:Courier Prime,monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:#8a8070;text-decoration:none;" onmouseover="this.style.color='#c8973a'" onmouseout="this.style.color='#8a8070'">Facebook</a><a href="https://x.com/PovertyVault" style="font-family:Courier Prime,monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:#8a8070;text-decoration:none;" onmouseover="this.style.color='#c8973a'" onmouseout="this.style.color='#8a8070'">X / Twitter</a><a href="https://www.instagram.com/businessofpoverty/" style="font-family:Courier Prime,monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:#8a8070;text-decoration:none;" onmouseover="this.style.color='#c8973a'" onmouseout="this.style.color='#8a8070'">Instagram</a></div><p class="footer-note">Independent · Veteran-run · No institutional funding · Following the money</p>
+  <div style="display:flex;gap:1.5rem;justify-content:center;margin-bottom:1rem;">
+    <a href="https://www.facebook.com/vaultarchivist/" style="font-family:Courier Prime,monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:#8a8070;text-decoration:none;" onmouseover="this.style.color='#c8973a'" onmouseout="this.style.color='#8a8070'">Facebook</a>
+    <a href="https://www.instagram.com/businessofpoverty/" style="font-family:Courier Prime,monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:#8a8070;text-decoration:none;" onmouseover="this.style.color='#c8973a'" onmouseout="this.style.color='#8a8070'">Instagram</a>
+    <!-- X/Twitter link removed pending confirmed current handle — old @PovertyVault account was suspended per prior migration -->
+  </div>
+  <p class="footer-note">Independent · Veteran-run · No institutional funding · Following the money</p>
 </footer>
 
 <script>
